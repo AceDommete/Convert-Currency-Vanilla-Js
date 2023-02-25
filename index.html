@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Hello</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      button {
+        outline: none;
+        border: none;
+        background-color: #121212;
+        padding: 12px;
+        color: white;
+        font-family: monospace;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1 style="font-family: monospace; font-weight: bold">
+        Convert Currency
+      </h1>
+      <input
+        type="text"
+        placeholder="Enter Amount"
+        style="
+          padding: 10px;
+          outline: none;
+          border: none;
+          background-color: #eaeaea;
+          color: black;
+        "
+        class="input"
+      />
+      <button class="get">Convert</button>
+      <select
+        class="original"
+        style="padding: 5px; outline: none; border: none; margin-left: 12px"
+        id="from"
+      >
+        <option>--</option>
+      </select>
+      <span style="font-weight: bold; font-family: Arial">To</span>
+      <select
+        class="select"
+        style="padding: 5px; outline: none; border: none; margin-left: 12px"
+        name="currency"
+        id="toconvert"
+      ></select>
+      <br />
+      <br />
+      <span
+        class="converted"
+        style="font-family: Helvetica; font-weight: 600"
+      ></span>
+      <br />
+      <br />
+    </div>
+  </body>
+</html>
